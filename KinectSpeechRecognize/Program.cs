@@ -23,9 +23,8 @@ namespace KinectSpeechRecognize
                     colors.Add( "blue" );
                     colors.Add( "end" );
                     colors.Add( "赤" );
-                    colors.Add( "みどり" );
+                    colors.Add( "ミドリ" );
                     colors.Add( "あお" );
-                    colors.Add( "終わり" );
 
                     Recognizer r = new Recognizer( "ja-JP", colors );
                     r.SpeechRecognized += SreSpeechRecognized;
@@ -34,8 +33,7 @@ namespace KinectSpeechRecognize
                     Console.WriteLine( "Using: {0}", r.Name );
 
                     using ( Stream s = source.Start() ) {
-                        r.SetInputToAudioStream( s,
-                                                    new SpeechAudioFormatInfo(
+                        r.SetInputToAudioStream( s, new SpeechAudioFormatInfo(
                                                         EncodingFormat.Pcm, 16000, 16, 1,
                                                         32000, 2, null ) );
 
