@@ -5,6 +5,7 @@ Speech SDKを使ったサンプルです。
 ライセンス
 ---------------
 ライセンスは｢MIT ライセンス｣とします。
+
 http://ja.wikipedia.org/wiki/MIT_License
 
 
